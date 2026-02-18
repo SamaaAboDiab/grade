@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link CDN Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- File CSS  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- image icon  -->
+    <link rel="icon" href="images/icons/shopping-cart_head.png">
+    <!-- Title  -->
+    <title>Traveler Store - تأكيد طلبك</title>
+  </head>
+
+  <body>
+    <!----------------------Header---------------------->
+    <div class="header_payment">
+      <div class="box_payment">
+        <img src="images/logos/image" alt="" class="logo_payment" />
+      </div>
+    </div>
+
+    <!----------------------CONTENT PAYMENT---------------------->
+    <div class="container_payment">
+      <div class="content_payment">
+        <!-- item one  -->
+        <div class="item_payment address"></div>
+
+        <!-- item Tow  -->
+        <div class="item_payment">
+          <h4 class="title_payment">طرق السداد</h4>
+
+          <div class="cards_payment">
+            <div class="card_payment" id="card-payment">
+              <img src="images/payment/payMent.png" class="card_payment_img" />
+              <span class="card_payment_p">إضافة بطاقة جديدة</span>
+            </div>
+
+            <div class="card_payment">
+              <img src="images/payment/payment_1.png" class="visa_img" />
+              <img src="images/payment/payment_2.png" class="visa_img" />
+              <img src="images/payment/payment_3.png" class="visa_img" />
+              <img src="images/payment/payment_4.png" class="visa_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_payment">
+        <div class="item_payment" id="item-payment">
+          <h4 class="title_payment">الملخص</h4>
+
+          <div class="boxs_order_total">
+            <div class="box_order_total">
+              <span>إجمالي الطلب</span>
+              <span class="order_total"></span>
+            </div>
+
+            <div class="box_order_total">
+              <span>تكاليف الشحن</span>
+              <span>مجاني</span>
+            </div>
+          </div>
+
+          <div class="boxs_order_total">
+            <div class="box_order_total">
+              <span>الإجمالي</span>
+              <span class="order_total"></span>
+            </div>
+
+            <button class="order_btn">إكمال الطلب</button>
+          </div>
+        </div>
+
+        <div class="item_payment item_payment_safety">
+          <img src="images/logos/image.png" />
+          <p class="P-Traveler">يحافظ Traveler Store على أمان معلوماتك ومدفوعاتك</p>
+          <img src="images/payment/payment_5.png" />
+        </div>
+      </div>
+
+      <!-- form- Add Address -->
+      <div class="container_modal">
+        <div class="modal_header">
+          <h4 class="modal_title">إضافة عنوان الشحن</h4>
+        </div>
+
+        <div class="modal_body">
+          <form action="" class="form_section">
+            <div class="form_body">
+              <div class="form_title">البيانات الشخصية</div>
+              <div class="form_box_modal">
+                <input
+                  type="text"
+                  placeholder="* أسم العميل"
+                  required
+                  class="form_input input_user"
+                />
+                <input
+                  type="text"
+                  placeholder="* رقم الهاتف"
+                  required
+                  class="form_input input_tel"
+                />
+              </div>
+
+              <div class="form_title">العنوان</div>
+              <div class="form_box_modal">
+                <input
+                  type="text"
+                  placeholder="* الشارع، المنزل/الشقة/الوحدة السكنية"
+                  required
+                  class="form_input input_address_street"
+                />
+                <input
+                  type="text"
+                  placeholder="* الشقة،الجناح،الوحدة،ألخ..."
+                  required
+                  class="form_input input_address_unit"
+                />
+              </div>
+
+              <div class="form_box_modal">
+                <input
+                  type="text"
+                  placeholder="* المدينة"
+                  required
+                  class="form_input input_address_city"
+                />
+                <input
+                  type="text"
+                  placeholder="* المحافظة "
+                  required
+                  class="form_input input_address_boycott"
+                />
+                <input
+                  type="text"
+                  placeholder="* الرقم البريدي"
+                  required
+                  class="form_input input_address_postal"
+                />
+              </div>
+
+              <div class="form_box_modal">
+                <input
+                  type="submit"
+                  value="إضافة عنوان الشحن"
+                  class="send_btn"
+                />
+              </div>
+              <i class="fa-solid fa-xmark close_modal"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- form- Change Address -->
+      <div class="container_modal modal_change">
+        <div class="modal_header">
+          <h4 class="modal_title">تعديل عنوان الشحن</h4>
+        </div>
+
+        <div class="modal_body">
+          <div class="form_section">
+            <div class="form_body">
+              <div class="form_title">البيانات الشخصية</div>
+              <div class="form_box_modal">
+                <input
+                  type="text"
+                  placeholder="* أسم العميل"
+                  required
+                  class="form_input input_user_change"
+                />
+                <input
+                  type="text"
+                  placeholder="* رقم الهاتف"
+                  required
+                  class="form_input input_tel_change"
+                />
+              </div>
+
+              <div class="form_title">العنوان</div>
+              <div class="form_box_modal">
+                <input
+                  type="text"
+                  placeholder="* الشارع، المنزل/الشقة/الوحدة السكنية"
+                  required
+                  class="form_input input_address_street_change"
+                />
+                <input
+                  type="text"
+                  placeholder="* الشقة،الجناح،الوحدة،ألخ..."
+                  required
+                  class="form_input input_address_unit_change"
+                />
+              </div>
+
+              <div class="form_box_modal">
+                <input
+                  type="text"
+                  placeholder="* المدينة"
+                  required
+                  class="form_input input_address_city_change"
+                />
+                <input
+                  type="text"
+                  placeholder="* المحافظة "
+                  required
+                  class="form_input input_address_boycott_change "
+                />
+                <input
+                  type="text"
+                  placeholder="* الرقم البريدي"
+                  required
+                  class="form_input input_address_postal_change"
+                />
+              </div>
+
+              <div class="box_change_btn">
+                <button class="change_modal_btn done_change_btn">تأكيد</button>
+                <button class="change_modal_btn close_change_btn">إالغاء</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- form- add visa card -->
+      <div class="container_modal modal_card">
+        <div class="modal_header">
+          <h4 class="modal_title_card">قدِّم مزيدًا من المعلومات</h4>
+
+          <div class="description_visa_card">
+            <img src="images/payment/payment_s.png" alt="">
+            <span>معلومات الدفع الخاصة بك في أمان معنا</span>
+          </div>
+
+          <div class="modal_row">
+            <img src="images/payment/payMent.png" alt="" class="card_payment_img">
+            <span>إضافة بطاقة جديدة</span>
+            <img src="images/payment/payment_1.png" alt="" class="visa_img">
+            <img src="images/payment/payment_2.png" alt="" class="visa_img">
+            <img src="images/payment/payment_3.png" alt="" class="visa_img">
+            <img src="images/payment/payment_4.png" alt="" class="visa_img">
+          </div>
+        </div>
+
+        <div class="modal_body">
+          <form action="" class="form_section">
+            <div class="form_body">
+              <div class="form_box_modal">
+                <input type="text" placeholder="رقم البطاقة" class="form_input">
+                <input type="text" placeholder="أسم صاحب البطاقة" class="form_input">
+              </div>
+
+              <div class="form_box_modal">
+                <input type="date"  class="form_input">
+                <input type="text" placeholder="CVV" class="form_input">
+              </div>
+
+              <div class="form_button_section">
+                <input type="submit" value="حفظ وتأكيد" class="send_btn visa_card_btn">
+              </div>
+            </div>
+          </form>
+          <i class="fa-solid fa-xmark close_modal" id="close_visa_card"></i>
+        </div>
+      </div>
+
+      <!-- modal order done  -->
+     <div class="container_modal popup">
+        <div class="popup_content">
+          <i class="fa-solid fa-circle-check popup_icon"></i>
+          <p class="popup_p">تم تأكيد الطلب بنجاح</p>
+        </div>
+        <button class="popup_btn">حسناً</button>
+
+      </div>
+    </div>
+    <div class="layer"></div>
+    <!----------------------FOOTER---------------------->
+    <footer class="footer">
+      <div class="footer_container container grid_content">
+        <div class="footer_item">
+          <h3 class="footer_title">معلومات عنا</h3>
+          <p class="footer_p">
+            نحن متجر على الإنترنت نقدم أفضل المنتجات ذات الجودة العالية والتسليم
+            السريع
+          </p>
+          <img src="images/logos/image(2).jpeg" alt="" class="footer_img" />
+        </div>
+
+        <div class="footer_item">
+          <h3 class="footer_title">الحساب</h3>
+
+          <ul class="footer_list">
+            <li class="footer_li">
+              <a href="sginup.php" class="footer_link">تسجيل الدخول</a>
+            </li>
+            <li class="footer_li">
+              <a href="sginup.php" class="footer_link">إنشاء حساب</a>
+            </li>
+            <li class="footer_li">
+              <a href="#" class="footer_link"></a>
+            </li>
+            <li class="footer_li">
+              <a href="products.html" class="footer_link">المنتجات</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_item">
+          <h3 class="footer_title">الروابط</h3>
+
+          <ul class="footer_list">
+            <li class="footer_li">
+              <a href="index.php#services" class="footer_link">الخدمات</a>
+            </li>
+            <li class="footer_li">
+              <a href="index.php#features" class="footer_link">المنتجات المميزة </a>
+            </li>
+            <li class="footer_li">
+              <a href="index.php#latest" class="footer_link">أحدث المنتجات</a>
+            </li>
+            <li class="footer_li">
+              <a href="contact_us.html" class="footer_link">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_item">
+          <h3 class="footer_title">اتصل بنا</h3>
+
+          <ul class="footer_list">
+            <li class="footer_li">
+              <i class="fa-solid fa-phone footer-icon"></i>
+              <span>1235654399+</span>
+            </li>
+            <li class="footer_li">
+              <i class="fa-solid fa-phone footer-icon"></i>
+              <span>1028753974+</span>
+            </li>
+            <li class="footer_li">
+              <i class="fa-solid fa-envelope footer-icon"></i>
+              <span>travelerStore2025@gamil.com</span>
+            </li>
+            <li class="footer_li">
+              <i class="fa-solid fa-location-dot footer-icon"></i>
+              <span>كفر الشيخ - مصر</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright container">
+        جميع الحقوق محفوظة.Traveler Store &copy; 2025 - 2026
+      </p>
+    </footer>
+
+    <!-- File JavaScript  -->
+    <script src="Js/pyment.js"></script>
+  </body>
+</html>

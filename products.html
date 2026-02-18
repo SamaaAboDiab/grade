@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- link CDN Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- File CSS  -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- image icon  -->
+  <link rel="icon" href="images/icons/shopping-cart_head.png" />
+  <!-- Title  -->
+  <title>Traveler Store - متجر أدوات السفر</title>
+</head>
+
+<body>
+  <!---------------------HEADER--------------------->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav_box">
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="login_toggle">
+            <a href="signin.php" class="login_link">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </div>
+
+          <div class="nav_shop" id="cart-shop">
+            <img src="images/icons/cart.png" alt="" />
+            <span class="cart_count">0</span>
+          </div>
+        </div>
+
+        <div class="nav_menu" id="nav-menu">
+          <i class="fa-solid fa-xmark nav_menu_close" id="menu-close"></i>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.php" class="nav_link">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav_link active">المنتجات</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.php#services" class="nav_link">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact_us.html" class="nav_link">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <img src="images/logos/image- (3).png" alt="Logo" class="nav_logo" />
+    </nav>
+  </header>
+
+  <!---------------------CART--------------------->
+  <div class="cart">
+    <h2 class="cart_title">سلة التسوق</h2>
+    <div class="cart_content"></div>
+
+    <div class="total">
+      <div class="total_title">الاجمالي</div>
+      <div class="total_price">. جنية</div>
+    </div>
+
+    <a href="pyment.html" class="btn_buy">شراء</a>
+
+    <div class="cart_empty">
+      <div><img src="images/Cart-img.png" /></div>
+      <p>عربة التسوق فارغة</p>
+      <a href="products.html" class="btn_shopping">إستكشف المنتجات</a>
+    </div>
+
+    <i class="fa-solid fa-xmark" id="cart-close"></i>
+  </div>
+
+  <div class="all_products container">
+    <div class="category_filter">
+      <h2 class="all_products_title">كل منتجات السفر</h2>
+
+      <div class="filter_btns">
+        <button class="filter_btn active_btn" id="all">الكل</button>
+        <button class="filter_btn" id="bags">شنط وحقائب</button>
+        <button class="filter_btn" id="organizers">منظمات وإكسسوارات</button>
+        <button class="filter_btn" id="electronics">إلكترونيات</button>
+        <button class="filter_btn" id="pillows">مستلزمات الراحة</button>
+        <button class="filter_btn" id="tools">أدوات عملية</button>
+      </div>
+    </div>
+
+    <div class="cards grid_content">
+      <!-- ==================== قسم الشنط (4 شنط) ==================== -->
+      <!-- شنطة سفر كبيرة -->
+      <div class="card all bags">
+        <div class="box_img">
+          <img src="images/H-product/product-1.png" alt="شنطة سفر كبيرة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">شنطة سفر كبيرة 80 لتر - بعجلات دوارة 360 درجة، خفيفة ومقاومة للصدمات</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="card_price">2450.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- شنطة سفر كابينة طيارة -->
+      <div class="card all bags">
+        <div class="box_img">
+          <img src="images/H-product/product-2.png" alt="شنطة كابينة طيارة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">شنطة سفر كابينة طيارة 55 سم - خفيفة الوزن، مسموح بها على متن الطائرة</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>1850.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- حقيبة ظهر سفر -->
+      <div class="card all bags">
+        <div class="box_img">
+          <img src="images/H-product/product-3.png" alt="حقيبة ظهر سفر" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">حقيبة ظهر سفر 40 لتر - مع منفذ USB شحن، جيب لاب توب 15.6 بوصة</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <p>1280.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- حقيبة دفل (شنطة رياضية) -->
+      <div class="card all bags">
+        <div class="box_img">
+          <img src="images/H-product/product-4.png" alt="حقيبة دفل" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">حقيبة دفل للسفر 60 لتر - مقاومة للماء، مع حزام كتف قابل للتعديل</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>890.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- ==================== قسم مستلزمات الراحة (4 منتجات) ==================== -->
+      <!-- وسادة سفر قابلة للنفخ -->
+      <div class="card all pillows">
+        <div class="box_img">
+          <img src="images/H-product/product-5.png" alt="وسادة سفر" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">وسادة سفر قابلة للنفخ بغطاء مخملي - مريحة للرقبة والظهر، مع حقيبة حفظ</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>350.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- مسند رقبة طبي -->
+      <div class="card all pillows">
+        <div class="box_img">
+          <img src="images/H-product/product-6.png" alt="مسند رقبة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">مسند رقبة طبي للسفر - مصنوع من الإسفنج الذكي، مريح للرقبة أثناء النوم</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>420.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- قناع عين للنوم -->
+      <div class="card all pillows">
+        <div class="box_img">
+          <img src="images/H-product/product-7.png" alt="قناع عين" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">قناع عين للنوم 3D - حريري، يمنع تسرب الضوء تماماً، مريح للعين</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <p>190.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- سدادات أذن للنوم -->
+      <div class="card all pillows">
+        <div class="box_img">
+          <img src="images/H-product/product-8 .png" alt="سدادات أذن" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">سدادات أذن للنوم - سيليكون ناعم، عازلة للصوت، مع علبة حفظ صغيرة</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>120.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- ==================== قسم الإلكترونيات (4 منتجات) ==================== -->
+      <!-- سماعات بلوتوث لاسلكية -->
+      <div class="card all electronics">
+        <div class="box_img">
+          <img src="images/H-product/product-9.png" alt="سماعات بلوتوث" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">سماعات بلوتوث لاسلكية - عازلة للضوضاء، تعمل 20 ساعة، مثالية للسفر</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <p>890.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- ساعة ذكية رياضية -->
+      <div class="card all electronics">
+        <div class="box_img">
+          <img src="images/H-product/product-10 .png" alt="ساعة ذكية" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">ساعة ذكية رياضية - تقيس ضربات القلب، عداد خطوات، مقاومة للماء</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>750.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- كاميرا تصوير صغيرة -->
+      <div class="card all electronics">
+        <div class="box_img">
+          <img src="images/H-product/product-12.png" alt="كاميرا صغيرة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">كاميرا تصوير صغيرة محمولة - 4K، خفيفة الوزن، مناسبة لتصوير الرحلات</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>1650.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- مكبر صوت محمول -->
+      <div class="card all electronics">
+        <div class="box_img">
+          <img src="images/H-product/product-13.png" alt="مكبر صوت" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">مكبر صوت محمول بلوتوث - مقاوم للماء، بطارية تدوم 12 ساعة</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>550.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- ==================== قسم الأدوات العملية (4 منتجات) ==================== -->
+      <!-- عدسة مكبرة محمولة -->
+      <div class="card all tools">
+        <div class="box_img">
+          <img src="images/H-product/product-14.png" alt="عدسة مكبرة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">عدسة مكبرة محمولة - قوة تكبير 10X، مع إضاءة LED، للخرائط والتفاصيل الدقيقة</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>120.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- بوصلة سفر -->
+      <div class="card all tools">
+        <div class="box_img">
+          <img src="images/H-product/product-15.png" alt="بوصلة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">بوصلة سفر احترافية - مقاومة للماء، دقيقة في التوجيه، مع حقيبة جلد</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>180.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- ساعة منبه سفر -->
+      <div class="card all tools">
+        <div class="box_img">
+          <img src="images/H-product/product-16.png" alt="ساعة منبه" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">ساعة منبه سفر صغيرة - إضاءة ليلية، بطارية تدوم طويلاً، خفيفة الوزن</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>220.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- شاحن طوارئ باليد -->
+      <div class="card all tools">
+        <div class="box_img">
+          <img src="images/H-product/product-17.png" alt="شاحن طوارئ" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">شاحن طوارئ يعمل باليد - يدوي، مع كشاف LED، لا يحتاج بطارية</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>290.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- ==================== قسم المنظمات والإكسسوارات (4 منتجات) ==================== -->
+      <!-- حامل جواز سفر -->
+      <div class="card all organizers">
+        <div class="box_img">
+          <img src="images/H-product/product-18.png" alt="حامل جواز سفر" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">حامل جواز سفر وتذاكر - جلد طبيعي، 6 جيوب للبطاقات، حماية RFID</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>240.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- محفظة نقود سفر -->
+      <div class="card all organizers">
+        <div class="box_img">
+          <img src="images/H-product/product-19.png" alt="محفظة نقود" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">محفظة نقود سفر - مقاومة للماء، جيوب متعددة للعملات والبطاقات</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>165.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- منظم أدوات صغير -->
+      <div class="card all organizers">
+        <div class="box_img">
+          <img src="images/H-product/product-20.png" alt="منظم أدوات" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">منظم أدوات صغير للسفر - جيوب متعددة للشواحن والسماعات والأغراض الصغيرة</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>135.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+
+      <!-- بطاقات شنطة ملونة -->
+      <div class="card all organizers">
+        <div class="box_img">
+          <img src="images/H-product/product-21.png" alt="بطاقات شنطة" class="card_image" />
+        </div>
+        <div class="card_details">
+          <h4 class="card_title">بطاقات شنطة سفر ملونة -7 قطع، مع كتابة العنوان، سهلة التمييز</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+          </div>
+          <p>99.<small>00</small> <span>جنيه</span></p>
+          <button class="card_btn">أضافة إلي العربة</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------FOOTER---------------------->
+  <footer class="footer">
+    <div class="footer_container container grid_content">
+      <div class="footer_item">
+        <h3 class="footer_title">معلومات عنا</h3>
+        <p class="footer_p">متجر Traveler Store - وجهتك الأولى لكل مستلزمات السفر بجودة عالية وأسعار مناسبة</p>
+        <img src="images/logos/image(2).jpeg" alt="" class="footer_img" />
+      </div>
+
+      <div class="footer_item">
+        <h3 class="footer_title">الحساب</h3>
+        <ul class="footer_list">
+          <li class="footer_li">
+            <a href="signin.php" class="footer_link">تسجيل الدخول</a>
+          </li>
+          <li class="footer_li">
+            <a href="sginup.php" class="footer_link">إنشاء حساب</a>
+          </li>
+          <li class="footer_li">
+            <a href="products.html" class="footer_link">المنتجات</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_item">
+        <h3 class="footer_title">الروابط</h3>
+        <ul class="footer_list">
+          <li class="footer_li">
+            <a href="index.php#services" class="footer_link">الخدمات</a>
+          </li>
+          <li class="footer_li">
+            <a href="index.php#features" class="footer_link">منتجات مميزة</a>
+          </li>
+          <li class="footer_li">
+            <a href="index.php#latest" class="footer_link">أحدث المنتجات</a>
+          </li>
+          <li class="footer_li">
+            <a href="contact_us.html" class="footer_link">اتصل بنا</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_item">
+        <h3 class="footer_title">اتصل بنا</h3>
+        <ul class="footer_list">
+          <li class="footer_li">
+            <i class="fa-solid fa-phone footer-icon"></i>
+            <span>01235654399+</span>
+          </li>
+          <li class="footer_li">
+            <i class="fa-solid fa-phone footer-icon"></i>
+            <span>01028753974+</span>
+          </li>
+          <li class="footer_li">
+            <i class="fa-solid fa-envelope footer-icon"></i>
+            <span>travelerStore2025@gmail.com</span>
+          </li>
+          <li class="footer_li">
+            <i class="fa-solid fa-location-dot footer-icon"></i>
+            <span>كفر الشيخ - مصر</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copyright container">جميع الحقوق محفوظة. Traveler Store &copy; 2025 - 2026</p>
+  </footer>
+
+  <!-- File JS  -->
+  <script src="../Js/app.js"></script>
+
+  <!-- File Js Scroll Header  -->
+  <script src="../Js/scroll.js"></script>
+</body>
+
+</html>
