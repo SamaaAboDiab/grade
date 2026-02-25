@@ -88,20 +88,24 @@
     <main class="main">
         <!----------------home ---------------->
         <section class="home">
-            <div class="home_box home_box_mobile">
+            <div class="home_box home_box_mobile"  style="text-align: center;">
                 <h1 class="home_title">
                     الحق رحلتك واطلب دلوقتي
                 </h1>
 
-                <p class="home_description">
+                <p class="home_description" style="font-size: 20px;">
+                   
                     كل حاجة لرحلتك هتلاقيها في مكان واحد وبافضل سعر
+                    <br><br>
+                رفيقك المثالي في كل رحلة
                 </p>
-
+                       <br>
+                       <br>
                 <a href="products.html" class="home_btn">→ تسوق الان</a>
             </div>
 
             <div class="home_box">
-                <img src="images/Banner.png" alt="" class="home-img" />
+                <img src="images/Banner.png" alt="" class="home-img" style="width: 120%;"/>
             </div>
         </section>
 
@@ -114,9 +118,9 @@
             <div class="category_item">
                 <img src="images/category2.jpeg" alt="" class="category_img" />
             </div>
-
-            <div class="category_item">
-                <img src="images/Category3.png" alt="" class="category_img" />
+                <div class="category_item">
+                    <img src="images/Category3.jpg" alt="" class="category_img"/>
+                </div>
             </div>
         </section>
 
@@ -216,7 +220,7 @@
             <div class="cards grid_content">
                 <div class="card">
                     <div class="box_img">
-                        <img src="images/products/F-product-5.png" alt="عدسة للهاتف" class="card_image" />
+                        <img src="images/products/F-product-5.png" alt="عدسة للهاتف" class="card_image" style="width: 120px;" />
                     </div>
                     <div class="card_details">
                         <h4 class="card_title">عدسة واسعة Macro للهاتف لتصوير المناظر الطبيعية</h4>
@@ -240,9 +244,9 @@
                     </div>
                     <div class="card_details">
                         <h4 class="card_title">
-                            
+
                             منظم لأمتعة السفر مكون من، مجموعة مكعبات للتعبئة،
-                                    شنطة قابلة للغسل </h4>
+                            شنطة قابلة للغسل </h4>
                         <div class="rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -259,7 +263,7 @@
 
                 <div class="card">
                     <div class="box_img">
-                        <img src="images/products/F-product-6.png" alt="بوصلة" class="card_image" />
+                        <img src="images/products/F-product-6.png" alt="بوصلة" class="card_image" style="width: 120px;"/>
                     </div>
                     <div class="card_details">
                         <h4 class="card_title">بوصلة رقمية متعددة الوظائف + كشاف ومقياس حرارة</h4>
@@ -387,17 +391,17 @@
                     <span>متوفر حصرياً علي Traveler Store</span>
                     <h2 class="offer_title">طقم السفر الأساسي</h2>
                     <p class="offer_description">شنطة سفر صغيرة
-                   / شاحن بطارية / باور بنك
-                   / محفظة
-                   / سماعات رأس
-                   / وسادة رقبة للسفر
-                   / شنطة شفافة لأدوات العناية الشخصية
-                   / شواحن ومحوّل كهرباء
-                   / شنطة أدوات شخصية
-                   / قناع نوم
-                   / شبشب مريح
-                   / زجاجة مياه ستانلس
-                   
+                        / شاحن بطارية / باور بنك
+                        / محفظة
+                        / سماعات رأس
+                        / وسادة رقبة للسفر
+                        / شنطة شفافة لأدوات العناية الشخصية
+                        / شواحن ومحوّل كهرباء
+                        / شنطة أدوات شخصية
+                        / قناع نوم
+                        / شبشب مريح
+                        / زجاجة مياه ستانلس
+
                     </p>
                     <a href="products.html" class="btn">→ اشترى الاّن</a>
                 </div>
