@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="nav_shop" id="cart-shop">
-                        <img src="image.png" alt="">
+                        <i class="fa-solid fa-cart-shopping"></i>
                         <span class="cart_count">0</span>
                     </div>
                 </div>

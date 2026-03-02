@@ -118,7 +118,7 @@ a {
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  background-color: #ff1e00;
+  background-color: #fe0606;
   color: var(--white-color);
   font-size: 12px;
   display: flex;
@@ -447,8 +447,7 @@ a {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: radial-gradient(#fff,
-      #2895f534);
+  background: radial-gradient(#fff, rgb(90, 167, 209));
 }
 
 .home_box {
@@ -564,6 +563,7 @@ a {
 
 .card {
   padding: 5px;
+ 
   border-radius: 10px;
   background-color: var(--white-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -890,7 +890,7 @@ a {
 .form_account {
   height: 100vh;
   padding-top: 120px;
-  background: radial-gradient(#fff, #ec405434);
+  background: radial-gradient(#fff, rgb(90, 167, 209));
 }
 
 .form-container {
@@ -1004,7 +1004,7 @@ a {
 }
 
 .input-wrapper i {
-  color: #fd384f7e;
+  color: #6fbbe77e;
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1086,7 +1086,7 @@ input[type="checkbox"] {
 
   width: 100%;
   min-height: 100vh;
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, rgb(90, 167, 209));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1186,8 +1186,8 @@ input[type="checkbox"] {
 }
 
 .input_box input[type="submit"]:hover {
-  background-color: #563434;
-  border-color: #563434;
+  background-color: #5f73bc;
+  border-color: #5687af;
 }
 
 /* info  */
@@ -1633,7 +1633,7 @@ input[type="checkbox"] {
   align-items: center;
   margin-top: 30px;
   padding: 10px;
-  background-color: #ff31421e;
+  background-color: #78c3f11e;
   border-radius: 10px;
   cursor: default;
 }

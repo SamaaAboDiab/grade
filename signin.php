@@ -175,10 +175,10 @@
         <p class="copyright container">جميع الحقوق محفوظة.Traveler Store &copy; 2025 - 2026</p>
     </footer>
     <!-- File Js Scroll Header  -->
-    <script src="Js/scroll.js"></script>
+    <script src="Js\scroll.js"></script>
 
     <!-- File Account Js  -->
-    <script src="Js/account.js"></script>
+    <script src="Js\account.js"></script>
 </body>
 
 </html>
